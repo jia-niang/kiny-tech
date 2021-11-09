@@ -1,0 +1,36 @@
+kind: pipeline
+name: default
+
+workspace:
+  path: /home/node/app
+
+steps:
+  - name: build
+    image: node
+    volumes:
+      - name: cache
+        path: /home/node/app
+    environment:
+      NODE_ENV: production
+    commands:
+      - yarn
+      - yarn build
+
+  - name: deploy
+    image: node
+    volumes:
+      - name: cache
+        path: /home/node/app
+    commands:
+      - cp -rf ./dist/* /var/www/kiny/
+
+volumes:
+  - name: cache
+    temp: {}
+  - name: www
+    host:
+      path: /var/www
+
+trigger:
+  branch:
+    - master
