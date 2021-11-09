@@ -7,9 +7,6 @@ workspace:
 steps:
   - name: build
     image: node:14
-    volumes:
-      - name: cache
-        path: /home/node/app
     environment:
       NODE_ENV: production
     commands:
@@ -18,15 +15,10 @@ steps:
 
   - name: deploy
     image: node:14
-    volumes:
-      - name: cache
-        path: /home/node/app
     commands:
       - cp -rf ./dist/* /var/www/kiny/
 
 volumes:
-  - name: cache
-    temp: {}
   - name: www
     host:
       path: /var/www
