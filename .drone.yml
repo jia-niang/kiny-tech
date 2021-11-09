@@ -11,6 +11,7 @@ steps:
       NODE_ENV: production
     commands:
       - yarn
+      - yarn global add @vue/cli
       - yarn build
 
   - name: deploy
