@@ -6,7 +6,7 @@ workspace:
 
 steps:
   - name: build
-    image: node
+    image: node:14
     volumes:
       - name: cache
         path: /home/node/app
@@ -17,7 +17,7 @@ steps:
       - yarn build
 
   - name: deploy
-    image: node
+    image: node:14
     volumes:
       - name: cache
         path: /home/node/app
