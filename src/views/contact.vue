@@ -56,7 +56,7 @@
 
       <section>
         <div class="desc">微博</div>
-        <div class="val">阿妈港甚内XKinyX银古</div>
+        <div class="val">甚内123</div>
         <div class="action">
           <a target="_blank" href="https://weibo.com/u/1807990034">前往观摩</a>
         </div>
