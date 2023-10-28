@@ -1,5 +1,5 @@
 # 凯尼科技 · 官网源码
 
-[前去瞧瞧~](https://kiny.tech)  
+[前去瞧瞧~](https://paperplane.cc/kiny/)  
 
-[![Build Status](https://travis-ci.com/s1n1an/kiny-tech.svg?token=4oD5rfvVVLMZSXYyxUky&branch=master)](https://travis-ci.com/s1n1an/kiny-tech)
+[![Build Status](https://drone.paperplane.cc/api/badges/jia-niang/kiny-tech/status.svg)](https://drone.paperplane.cc/jia-niang/kiny-tech)
