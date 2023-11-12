@@ -24,7 +24,7 @@ steps:
         path: /webroot
     commands:
       - mkdir -p /webroot/kiny/
-      - rm -rf /webroot/kiny/**/*.*
+      - rm -rf /webroot/kiny/*
       - cp -rf ./dist/* /webroot/kiny/
 
 volumes:
