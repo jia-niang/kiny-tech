@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  publicPath: '/kiny',
+  publicPath: '/',
 
   pluginOptions: {
     'style-resources-loader': {

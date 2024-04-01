@@ -16,6 +16,6 @@ const routes = [
   { component: Contact, path: '/contact' },
   { component: Lili, path: '/lili' }
 ]
-const router = new Router({ routes, base: '/kiny/', mode: 'history' })
+const router = new Router({ routes, base: '/', mode: 'history' })
 
 export default router
